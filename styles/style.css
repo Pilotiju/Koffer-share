@@ -8,6 +8,12 @@
 body::-webkit-scrollbar{
     display: none; /*Hides the Scroll bars*/
 }
+.normal-fs{
+    font-size: 40px;
+}
+.h1-fs{
+    font-size: 10vw;
+}
 
 /*===============MAIN===============*/
 *{
@@ -18,6 +24,23 @@ body{
 }
 main{
     margin-top: 20px;
+}
+main h1{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 13px;
+}
+main h1::first-letter {
+    color: var(--prim-color);
+}
+main h1::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(to right, var(--prim-color), transparent);
+    bottom: 2;
 }
 
 /*----------------Main-Driver-List----------------*/
@@ -71,7 +94,6 @@ main{
 /*----------------Main-Packet-List----------------*/
 .main-packet h1{
     position: relative;
-    font-size: 30px;
     text-align: center;
     margin: 0;
     margin-bottom: 13px;
@@ -114,4 +136,9 @@ main{
     color: rgb(0, 0, 0);
 
     margin-left: 4px;
+}
+
+/*----------------Main-new-Packet-List----------------*/
+.main-new-packet{
+
 }

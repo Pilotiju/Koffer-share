@@ -500,9 +500,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 1357.89644326359,
-			"y": 2383.2192040167506,
-			"z": 0.1314627095200627,
+			"x": -741.1224262247046,
+			"y": 555.5800687454516,
+			"z": 0.7309217947391966,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -1168,7 +1168,9 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [],
+			"selectedShapeIds": [
+				"shape:kmDre88VHYvzvpYwYKNUw"
+			],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -2002,7 +2004,7 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 1187.667132188112,
+			"x": 1169.5253133632496,
 			"y": -236.72846363626462,
 			"rotation": 0,
 			"isLocked": false,
@@ -2013,13 +2015,16 @@
 			"props": {
 				"color": "light-green",
 				"size": "m",
-				"w": 174.3425582420517,
+				"w": 203.1654730113214,
 				"font": "draw",
 				"textAlign": "start",
 				"autoSize": true,
 				"scale": 2.4303907051821625,
 				"richText": {
 					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
 					"content": [
 						{
 							"type": "paragraph",
@@ -2029,7 +2034,7 @@
 							"content": [
 								{
 									"type": "text",
-									"text": "Paket"
+									"text": "Packet"
 								}
 							]
 						}
@@ -2344,7 +2349,7 @@
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "default",
+				"type": "move",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -2354,7 +2359,7 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 1572,
+				"w": 670,
 				"h": 926
 			},
 			"insets": [
@@ -2372,7 +2377,7 @@
 			"isFocused": true,
 			"devicePixelRatio": 1,
 			"isCoarsePointer": false,
-			"isHoveringCanvas": null,
+			"isHoveringCanvas": true,
 			"openMenus": [],
 			"isChangingStyle": false,
 			"isReadonly": false,

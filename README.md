@@ -1,9 +1,11 @@
-# A temorary Schoolproject
+# A temporary Schoolproject
 
 ## Quellen
 
-> [!NOTE] Icons (give Source)
+> [!NOTE]
+> Icons (give Source):
 > - https://lucide.dev
 
-> [!NOTE] Font
+> [!NOTE]
+> Font
 > - https://www.fontshare.com/?user-text=Chillax
