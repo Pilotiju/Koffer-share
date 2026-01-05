@@ -1,0 +1,89 @@
+@import url(satoshi.css);
+
+:root{
+    --prim-color: rgb(67,242,13);
+    --bg-accent-1: rgb(228, 228, 228);
+    --bg-accent-1-dark: rgb(207, 207, 207);
+}
+body::-webkit-scrollbar{
+    display: none; /*Hides the Scroll bars*/
+}
+
+/*===============MAIN===============*/
+*{
+    font-family: Satoshi-Medium;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+main{
+    margin-top: 20px;
+}
+
+/*----------------Main-Driver-List----------------*/
+.main-drivers h1{
+    position: relative;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 13px;
+}
+.main-drivers h1::first-letter {
+    color: var(--prim-color);
+}
+.main-drivers h1::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(to right, var(--prim-color), transparent);
+    bottom: 2;
+}
+.main-drivers .driver-list{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 73px;
+    gap: 10px;
+}
+.main-drivers .driver-list .driver-item{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 4px;
+    border-radius: 12px;
+    background-color: var(--bg-accent-1);
+    box-shadow:
+    inset 0px -4px 0px var(--bg-accent-1-dark);
+    overflow: hidden;
+}
+.main-drivers .driver-list .driver-item img{
+    height: 73px;
+}
+
+.main-drivers .driver-list .driver-item .top{
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    background-color: red;
+}
+.main-drivers .driver-list .driver-item .top .driver-name{
+    font-weight: bold;
+}
+
+/*----------------Main-Packet-List----------------*/
+.main-packet h1{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 13px;
+}
+.main-packet h1::first-letter {
+    color: var(--prim-color);
+}
+.main-packet h1::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(to right, var(--prim-color), transparent);
+    bottom: 2;
+}
