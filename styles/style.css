@@ -87,3 +87,29 @@ main{
     background: linear-gradient(to right, var(--prim-color), transparent);
     bottom: 2;
 }
+
+.main-packet .packet-list{
+    display: grid;
+    position: relative;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 200px;
+}
+.main-packet .packet-item{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40px 10px 10px;
+    overflow: hidden;
+
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0px 0px 5px rgb(180, 180, 180);
+}
+.main-packet .packet-item img{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+.main-packet .packet-item .title{
+    display: block;
+    color: white;
+}
