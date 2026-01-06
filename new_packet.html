@@ -9,7 +9,7 @@
     <main class="main_new_package">
         <h1 class="h1_fs">Neues Paket</h1>
         <section class="new_package_list">
-            <div class="new_package_item"></div>
+            <div class="new_package_item input_image_item normal_fs"> <p>Bild hochladen</p> <img src="img/icons/camera-regular-full.svg"> </div>
             <div class="new_package_item input_title_item">
                 <form>
                     <input class="normal_fs" type="text" placeholder="Titel" required>
@@ -20,7 +20,27 @@
                     <textarea class="normal_fs" placeholder="Beschreibung deines Pakets" required></textarea>
                 </form>
             </div>
-            <div class="new_package_item"></div>
+            <div class="new_package_item nested_input_main">
+                <div class="nested_input_item"><h2 class="normal_fs">Weitere Angaben</h2></div>
+                <div class="nested_input_item">
+                    <form>
+                        <label for="maße">Maße:</label>
+                        <input type="text" id="maße">
+                    </form>
+                </div>
+                <div class="nested_input_item">
+                    <form>
+                        <label for="gewicht">Gewicht</label>
+                        <input type="text" id="gewicht">
+                    </form>
+                </div>
+                <div class="nested_input_item">
+                    <form>
+                        <label for="wichtige_infos">Wichtige <br> Informationen</label>
+                        <input type="text" id="wichtige_infos">
+                    </form>
+                </div>
+            </div>
 
         </section>
     </main>

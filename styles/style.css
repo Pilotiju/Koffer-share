@@ -23,7 +23,9 @@ body{
     background-color: rgb(255, 255, 255);
 }
 main{
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 main h1{
     position: relative;
@@ -149,7 +151,7 @@ textarea, textarea:focus, textarea:active {
     display: grid;
     position: relative;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 30px 100px 200px;
+    grid-template-rows: 200px 30px 100px 215px;
     gap: 12px;
 }
 .main_new_package .input_title_item{
@@ -185,6 +187,58 @@ textarea, textarea:focus, textarea:active {
     padding-top: 36px;
 }
 
+.input_image_item{
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.input_image_item p{
+    display: inline-block;
+    position: relative;
+    top: 68px;
+    color: rgb(107, 107, 107);
+    text-align: center;
+}
+.input_image_item img{
+    position: relative;
+    top: 80px;
+    width: 40px;
+}
+
+/* TODO ----------------Main-new-package-List NESTED----------------*/
+.main_new_package .nested_input_main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35px 45px 45px 90px;
+}
+.main_new_package .nested_input_main .nested_input_item{
+    display: flex;
+    position: relative;
+    align-items: center;
+    outline: red 3px solid;
+    width: 100%;
+    height: 100%;
+}
+.main_new_package .nested_input_main .nested_input_item h2{
+    margin-left: 6px;
+    margin-right: 0px;
+    margin-top: 3px;
+}
+.main_new_package .nested_input_main .nested_input_item form{
+    display: flex;
+    position: relative;
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 3px;
+
+    outline: color 3px solid;
+}
+.main_new_package .nested_input_main .nested_input_item input{
+    background: rgb(219, 219, 219);
+    border-radius: 5px;
+}
 
 .new_package_item{
     display: block;
