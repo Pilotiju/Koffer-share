@@ -17,29 +17,46 @@
             </div>
             <div class="new_package_item input_content_item">
                 <form>
-                    <textarea class="normal_fs" placeholder="Beschreibung deines Pakets" required></textarea>
+                    <textarea class="normal_fs" placeholder="Beschreibung" required></textarea>
                 </form>
             </div>
             <div class="new_package_item nested_input_main">
-                <div class="nested_input_item"><h2 class="normal_fs">Weitere Angaben</h2></div>
-                <div class="nested_input_item">
-                    <form>
-                        <label for="maße">Maße:</label>
-                        <input type="text" id="maße">
-                    </form>
+                <div class="nested_input_item_container"><h2 class="normal_fs h2c">Weitere Angaben:</h2></div>
+                <div class="nested_input_item_container">
+                    <div class="l_r_grid">
+                        <div class="l_r_grid_item">
+                            <label for="maße">Maße:</label>
+                        </div>
+                        <div class="l_r_grid_item">
+                            <form>
+                                <input type="text" id="maße">
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="nested_input_item">
-                    <form>
-                        <label for="gewicht">Gewicht</label>
-                        <input type="text" id="gewicht">
-                    </form>
+                <div class="nested_input_item_container">
+                    <div class="l_r_grid">
+                        <div class="l_r_grid_item">
+                            <label for="gewicht">Gewicht:</label>
+                        </div>
+                        <div class="l_r_grid_item">
+                            <form>
+                                <input type="text" id="gewicht">
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="nested_input_item">
-                    <form>
-                        <label for="wichtige_infos">Wichtige <br> Informationen</label>
-                        <input type="text" id="wichtige_infos">
-                    </form>
-                </div>
+                    <div class="item_important_info_grid">
+                        <div class="line"></div>
+                        <div class="item_important_info_grid_item">
+                            <label for="wichtige_infos"><h2 class="normal_fs">Extra Anmerkungen:</h2></label>
+                        </div>
+                        <div class="item_important_info_grid_item">
+                            <form class="item_important_info">
+                                <input type="text" id="wichtige_infos">
+                            </form>
+                        </div>
+                    </div>
             </div>
 
         </section>
