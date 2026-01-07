@@ -573,7 +573,3 @@ li{
 .chat_input_grid .send_img_container img{
     width: 65%;
 }
-
-.chat_input_grid{
-    outline: blue 3px solid;
-}
