@@ -8,7 +8,7 @@
     --prim-color-darker: rgb(39, 139, 9);
     --chat-color-own: rgb(202, 243, 190);
     --chat-color-other: rgb(87, 189, 56);
-    --chat-color-time: rgb(134, 134, 134);
+    --chat-color-time: rgb(112, 112, 112);
 
     --bg-accent-1: rgb(228, 228, 228);
     --bg-accent-1-dark: rgb(207, 207, 207);
@@ -406,7 +406,7 @@ li{
 .chat_main .chat_history_grid{
     display: grid;
     grid-template-columns: 100%;
-    grid-auto-rows: 100px;
+    grid-auto-rows: 66px;
 }
 .chat_bubble_container{
     display: flex;
@@ -418,7 +418,6 @@ li{
 .chat_bubble_container .chat_bubble{
     width: max-content;
     margin: 10px;
-
 }
 .l_bubble_container{
     justify-content: start;
@@ -428,7 +427,7 @@ li{
 }
 .l_bubble_container .l_bubble_tri{
     position: absolute;
-    top: 13.4px;
+    top: -4px;
 }    
 .l_bubble_container .l_chat_text{
     background-color: var(--chat-color-other);
@@ -459,7 +458,7 @@ li{
 }
 .r_bubble_container .r_bubble_tri{
     position: absolute;
-    top: 13.4px;
+    top: -4px;
 }    
 .r_bubble_container .r_chat_text{
     background-color: var(--chat-color-own);
