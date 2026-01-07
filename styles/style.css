@@ -89,7 +89,7 @@ li{
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: 80px;
-    gap: 13px;
+    gap: 16px;
 }
 .main_drivers .driver_list .driver_item{
     display: grid;
