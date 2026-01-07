@@ -63,6 +63,7 @@ button{
     margin: 0;
 }
 
+/* TODO ------------------- DRIVER ------------------- */
 /*----------------Main-Driver_List----------------*/
 .main_drivers h1{
     position: relative;
@@ -111,6 +112,7 @@ button{
     font-weight: bold;
 }
 
+/* TODO ------------------- PACKAGE ------------------- */
 /*----------------Main-package-List----------------*/
 .main_package h1{
     position: relative;
@@ -152,6 +154,7 @@ button{
     width: 100%;
 }
 
+/* TODO ------------------- NEW PACKAGE ------------------- */
 /*----------------Main-new-package-List----------------*/
 .main_new_package .new_package_list{
     display: grid;
@@ -213,7 +216,7 @@ button{
     width: 40px;
 }
 
-/* TODO ----------------Main-new-package-List NESTED----------------*/
+/* * ----------------Main-new-package-List NESTED----------------*/
 .main_new_package .nested_input_main{
     display: grid;
     grid-template-columns: 100%;
@@ -322,9 +325,13 @@ button{
     margin-top: 20px;
 }
 .main_new_package .new_package_btn{
+    display: flex;
+    align-items: center;
     margin: 0;
     background-color: var(--prim-color);
-    padding: 20px;
+    padding: 18px;
+    padding-left: 14px;
+    padding-right: 54px;
     color: rgb(25, 59, 15);
     font-weight: bold;
     letter-spacing: 0.3px;
@@ -352,7 +359,12 @@ button{
 .main_new_package .new_package_btn:active{
     transform: scale(0.95);
 }
-
+.main_new_package .new_package_btn img{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 40px;
+}
 
 .new_package_item{
     display: block;
@@ -363,7 +375,6 @@ button{
     box-shadow: 0px 0px 5px rgb(175, 175, 175);
     outline: 2px solid rgb(206, 206, 206);
 }
-
 .line{
     position: absolute;
     width: 100%;
@@ -371,4 +382,23 @@ button{
     background-color: hsl(0, 0%, 84%);
     margin: 0;
     margin-top: 5px;
+}
+
+/* TODO ------------------- Chat ------------------- */
+.chat_main .chat_history_grid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 100px;
+}
+
+/* * --------------- Chat Nav --------------- */
+.chat_main .chat_name{
+    display: grid;
+    position: fixed;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: 100%;
+}
+
+.chat_bubble_container{
+    outline: red 3px solid;
 }
