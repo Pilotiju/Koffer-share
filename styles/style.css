@@ -20,6 +20,10 @@ body::-webkit-scrollbar{
 .h1_fs{
     font-size: 10vw;
 }
+.h2_fs{
+    font-size: 22px;
+    font-weight: 500;
+}
 
 /* ? ===============MAIN===============*/
 *{
@@ -391,7 +395,7 @@ li{
 /* TODO ------------------- Chat ------------------- */
 .chat_main{
     position: relative;
-    margin-top: 60px;
+    margin-top: 75px;
 }
 .chat_main .chat_history_grid{
     display: grid;
@@ -407,35 +411,47 @@ li{
     top: 0;
     left: 0;
     padding: 10px;
-    padding-top: 20px;
     width: 100%;
-    height: 24px;
-    grid-template-columns: 40px 1fr;
-    gap: 20px;
+    height: 43px;
+    grid-template-columns: 50px 1fr;
+    gap: 12px;
     grid-template-rows: 100%;
     background-color: var(--prim-color-ver2);
-    align-items: center;
+    justify-content: center;
     box-shadow: 0px 4px 0px rgb(121, 204, 25);
 }
 .chat_main .chat_name .arrow img{
-    width: 40px;
+    width: 50px;
 }
 /* * NESTED */
 .nested_info_grid{
     display: grid;
     position: relative;
-    grid-template-columns: 40px 1fr;
+    grid-template-columns: 47px 1fr;
     grid-template-rows: 100%;
 }
+.nested_info_grid .name_container{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.nested_info_grid .name_container .name{
+    color: white;
+}
+.nested_info_grid .name_container h2{
+    margin: 0;
+    margin-left: 10px;
+}
 .chat_name .nested_info_grid .nested_chat_img_container{
-    width: 40px;
-    height: 40px;
+    width: 47px;
+    height: 100%;
 
     outline: purple 3px solid;
 }
 .chat_name .nested_info_grid .nested_chat_img_container img{
     border-radius: 10000px;
     width: 100%;
+    outline: white 3px solid;
 }
 
 .chat_bubble_container{
