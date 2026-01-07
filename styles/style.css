@@ -88,13 +88,13 @@ li{
 .main_drivers .driver_list{
     display: grid;
     grid-template-columns: 100%;
-    grid-auto-rows: 73px;
-    gap: 10px;
+    grid-auto-rows: 80px;
+    gap: 13px;
 }
 .main_drivers .driver_list .driver_item{
     display: grid;
     grid-template-columns: max-content 1fr;
-    gap: 2px;
+    gap: 3px;
     border-radius: 12px;
     background-color: var(--bg-accent-1);
     box-shadow:
@@ -102,7 +102,7 @@ li{
     overflow: hidden;
 }
 .main_drivers .driver_list .driver_item img{
-    width: 73px;
+    width: 80px;
 }
 
 .main_drivers .driver_list .driver_item .driver_info_grid_row{
@@ -147,12 +147,11 @@ li{
     width: 40px;
     height: 28px;
     justify-content: center;
-    align-items: center;
     bottom: 8px;
 }
-
 .img_car_type_container img{
     height: 100%;
+    margin-top: 5px;
 }
 
 .main_drivers .driver_list .driver_item .top .top_stars img{
