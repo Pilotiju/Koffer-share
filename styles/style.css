@@ -105,6 +105,11 @@ li{
     width: 73px;
 }
 
+.main_drivers .driver_list .driver_item .driver_info_grid_row{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: max-content max-content max-content;
+}
 .main_drivers .driver_list .driver_item .top{
     display: grid;
     grid-template-columns: max-content 1fr max-content;
@@ -126,7 +131,25 @@ li{
     align-items: center;
     flex-direction: row;
 }
-.main_drivers .driver_list .driver_item .top .top_stars .top_stars_item{
+.route_container{
+    display: flex;
+    position: relative;
+    padding-right: 5px;
+    justify-content: space-between;
+    color: rgb(1, 102, 255);
+}
+.route_container .arrow{
+    font-weight: bold;
+}
+.img_car_type_container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    justify-content: end;
+}
+.img_car_type_container img{
+    width: 100%;
 }
 
 .main_drivers .driver_list .driver_item .top .top_stars img{
