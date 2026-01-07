@@ -85,17 +85,6 @@ li{
     margin: 0;
     margin-bottom: 13px;
 }
-.main_drivers h1::first-letter {
-    color: var(--prim-color);
-}
-.main_drivers h1::before{
-    content: '';
-    position: absolute;
-    width: 80%;
-    height: 3px;
-    background: linear-gradient(to right, var(--prim-color), transparent);
-    bottom: 2;
-}
 .main_drivers .driver_list{
     display: grid;
     grid-template-columns: 100%;
@@ -113,17 +102,43 @@ li{
     overflow: hidden;
 }
 .main_drivers .driver_list .driver_item img{
-    height: 73px;
+    width: 73px;
 }
 
 .main_drivers .driver_list .driver_item .top{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-rows: 100%;
     height: max-content;
-    background-color: red;
 }
 .main_drivers .driver_list .driver_item .top .driver_name{
+    display: inline;
+    width: max-content;
     font-weight: bold;
+    font-size: 21px;
+}
+.main_drivers .driver_list .driver_item .top .top_stars{
+    display: flex;
+    position: relative;
+    margin: 0;
+    width: max-content;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.main_drivers .driver_list .driver_item .top .top_stars .top_stars_item{
+}
+
+.main_drivers .driver_list .driver_item .top .top_stars img{
+    display: inline;
+    position: relative;
+    width: 23px;
+}
+.main_drivers .driver_list .driver_item .top .top_stars .star_beginning{
+    display: inline;
+    position: relative;
+    margin: 0;
+    top: 0px;
 }
 
 /* TODO ------------------- PACKAGE ------------------- */

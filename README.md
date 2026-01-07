@@ -12,3 +12,8 @@
 
 - https://fontawesome.com/search?q=camera
 - https://www.studiwork.com/fahrer/
+
+## temp sum
+- [ ] stars
+- [ ] route
+- [ ] welches Auto
