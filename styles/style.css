@@ -6,6 +6,9 @@
     --prim-color-lighter: rgb(115, 255, 0);
     --prim-color-dark: rgb(55, 190, 14);
     --prim-color-darker: rgb(39, 139, 9);
+    --chat-color-own: rgb(202, 243, 190);
+    --chat-color-other: rgb(87, 189, 56);
+
     --bg-accent-1: rgb(228, 228, 228);
     --bg-accent-1-dark: rgb(207, 207, 207);
 }
@@ -22,7 +25,7 @@ body::-webkit-scrollbar{
     font-size: 10vw;
 }
 .h2_fs{
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
@@ -402,9 +405,55 @@ li{
 .chat_main .chat_history_grid{
     display: grid;
     grid-template-columns: 100%;
-    grid-auto-rows: 100px;
+    grid-auto-rows: 60px;
+}
+.chat_bubble_container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    outline: red 3px solid;
+}
+.chat_bubble_container .chat_bubble{
+    width: max-content;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+.l_bubble_container{
+    justify-content: start;
+}
+.l_bubble_container .l_bubble{
+    background-color: var(--chat-color-other);
+    color: white;
+}
+.l_bubble_container .l_bubble_tri{
+    position: absolute;
+    top: 6px;
+}
+.r_bubble_container{
+    justify-content: end;
+}
+.r_bubble_container .r_bubble{
+    background-color: var(--chat-color-own);
+    color: black;
+}
+.r_bubble_container .r_bubble_tri{
+    position: absolute;
+    top: 6px;
 }
 
+
+
+
+.chat_bubble_tri{
+    color: blue;
+}
 /* * --------------- Chat Nav --------------- */
 .chat_name{
     display: grid;
@@ -442,7 +491,7 @@ li{
 }
 .nested_info_grid .name_container h2{
     margin: 0;
-    margin-left: 10px;
+    margin-left: 13px;
 }
 .chat_name .nested_info_grid .nested_chat_img_container{
     width: 47px;
@@ -454,8 +503,4 @@ li{
     border-radius: 10000px;
     width: 100%;
     outline: white 3px solid;
-}
-
-.chat_bubble_container{
-    outline: red 3px solid;
 }
