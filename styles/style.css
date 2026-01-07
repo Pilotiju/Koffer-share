@@ -402,6 +402,8 @@ li{
 .chat_main{
     position: relative;
     margin-top: 75px;
+    width: 98%;
+    margin-left: 1%;
 }
 .chat_main .chat_history_grid{
     display: grid;
