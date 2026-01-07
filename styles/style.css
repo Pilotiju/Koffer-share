@@ -495,7 +495,7 @@ li{
     width: 100%;
     height: 35px;
     grid-template-columns: 35px 1fr;
-    gap: 12px;
+    gap: 9px;
     grid-template-rows: 100%;
     background-color: var(--prim-color-dark);
     justify-content: center;
@@ -533,4 +533,47 @@ li{
 .nested_info_grid .name_container h2{
     margin: 0;
     margin-left: 8px;
+}
+
+/* * ------------ Chat Input ------------ */
+.chat_input_grid{
+    display: grid;
+    grid-template-columns: 1fr 53px;
+    grid-template-rows: 100%;
+    position: fixed;
+    width: 94%;
+    margin-left: 3%;
+    height: 53px;
+    left: 0px;
+    bottom: 14px;
+    border-radius: 100px;
+    background-color: var(--bg-accent-1);
+}
+.chat_input_grid form{
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    top: 5px;
+    margin-left: 13px;
+    height: 100%;
+}
+.chat_input_grid form input{
+    background-color: var(--bg-accent-1);
+}
+.chat_input_grid .send_img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.8);
+    background-color: var(--prim-color-dark);
+    border-radius: 100px;
+}
+.chat_input_grid .send_img_container img{
+    width: 65%;
+}
+
+.chat_input_grid{
+    outline: blue 3px solid;
 }
