@@ -8,6 +8,7 @@
     --prim-color-darker: rgb(39, 139, 9);
     --chat-color-own: rgb(202, 243, 190);
     --chat-color-other: rgb(87, 189, 56);
+    --chat-color-time: rgb(134, 134, 134);
 
     --bg-accent-1: rgb(228, 228, 228);
     --bg-accent-1-dark: rgb(207, 207, 207);
@@ -25,7 +26,7 @@ body::-webkit-scrollbar{
     font-size: 10vw;
 }
 .h2_fs{
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 600;
     letter-spacing: 0.5px;
 }
@@ -405,7 +406,7 @@ li{
 .chat_main .chat_history_grid{
     display: grid;
     grid-template-columns: 100%;
-    grid-auto-rows: 55px;
+    grid-auto-rows: 100px;
 }
 .chat_bubble_container{
     display: flex;
@@ -416,43 +417,74 @@ li{
 }
 .chat_bubble_container .chat_bubble{
     width: max-content;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-right: 12px;
-    padding-left: 12px;
     margin: 10px;
-    border-radius: 10px;
 
 }
 .l_bubble_container{
     justify-content: start;
 }
 .l_bubble_container .l_bubble{
-    background-color: var(--chat-color-other);
     color: white;
 }
 .l_bubble_container .l_bubble_tri{
     position: absolute;
-    top: 3px;
+    top: 13.4px;
+}    
+.l_bubble_container .l_chat_text{
+    background-color: var(--chat-color-other);
+    border-radius: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 12px;
+    padding-left: 12px;
 }
+.l_bubble_container .chat_time_container{
+    display: flex;
+    position: relative;
+    justify-content: end;
+    align-items: center;
+    height: 20px;
+    width: 100%;
+    margin: 0;
+}
+.l_bubble_container .chat_time_container{
+    margin: 0;
+    margin-top: 7px;
+    font-size: small;
+    color: var(--chat-color-time);
+}
+
 .r_bubble_container{
     justify-content: end;
 }
-.r_bubble_container .r_bubble{
-    background-color: var(--chat-color-own);
-    color: black;
-}
 .r_bubble_container .r_bubble_tri{
     position: absolute;
-    top: 3px;
+    top: 13.4px;
+}    
+.r_bubble_container .r_chat_text{
+    background-color: var(--chat-color-own);
+    border-radius: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.r_bubble_container .chat_time_container{
+    display: flex;
+    position: relative;
+    justify-content: end;
+    align-items: center;
+    height: 20px;
+    width: 100%;
+    margin: 0;
+}
+.r_bubble_container .chat_time_container{
+    margin: 0;
+    margin-top: 7px;
+    font-size: small;
+    color: var(--chat-color-time);
 }
 
-
-
-
-.chat_bubble_tri{
-    color: blue;
-}
 /* * --------------- Chat Nav --------------- */
 .chat_name{
     display: grid;
@@ -462,8 +494,8 @@ li{
     left: 0;
     padding: 10px;
     width: 100%;
-    height: 43px;
-    grid-template-columns: 50px 1fr;
+    height: 35px;
+    grid-template-columns: 35px 1fr;
     gap: 12px;
     grid-template-rows: 100%;
     background-color: var(--prim-color-dark);
@@ -471,13 +503,13 @@ li{
     box-shadow: 0px 4px 0px var(--prim-color-darker);
 }
 .chat_main .chat_name .arrow img{
-    width: 50px;
+    width: 35px;
 }
 /* * NESTED */
 .nested_info_grid{
     display: grid;
     position: relative;
-    grid-template-columns: 47px 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: 100%;
 }
 .nested_info_grid .name_container{
@@ -485,21 +517,21 @@ li{
     position: relative;
     align-items: center;
 }
+.chat_name .nested_info_grid .nested_chat_img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 100%;
+}
+.chat_name .nested_info_grid .nested_chat_img_container img{
+    border-radius: 10000px;
+    width: 100%;
+}
 .nested_info_grid .name_container .name{
     color: white;
 }
 .nested_info_grid .name_container h2{
     margin: 0;
-    margin-left: 13px;
-}
-.chat_name .nested_info_grid .nested_chat_img_container{
-    width: 47px;
-    height: 100%;
-
-    outline: purple 3px solid;
-}
-.chat_name .nested_info_grid .nested_chat_img_container img{
-    border-radius: 10000px;
-    width: 100%;
-    outline: white 3px solid;
+    margin-left: 8px;
 }
